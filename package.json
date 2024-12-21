@@ -1,0 +1,29 @@
+{
+  "name": "countdown-timer-app",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app-bridge-react": "^4.1.6",
+    "@shopify/polaris": "^13.9.2",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.2",
+    "web-vitals": "^2.1.4"
+  },
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "author": "HP",
+  "private": true,
+  "workspaces": [
+    "extensions/*"
+  ]
+}

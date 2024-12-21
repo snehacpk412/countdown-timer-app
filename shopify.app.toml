@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "10f666e8d92aec6c0487312661f4759e"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "countdown-timer-app"
+handle = "countdown-timer-app-9"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "development-store-count.myshopify.com"
